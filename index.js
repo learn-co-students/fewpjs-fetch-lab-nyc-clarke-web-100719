@@ -3,9 +3,10 @@ function fetchBooks() {
   .then(function(response){
     return response.json();
   })
-  .then(function(json){
-    return renderBooks(json);
+  .then(function(data){
+    return renderBooks(data);
   })
+  debugger;
 }
 
 function renderBooks(json) {
